@@ -1,2 +1,5 @@
 # nesy-ai
-Neuro Symbolic AI for Moral Reasoning using Dual Process Thinking Approach
+Dual Process Thinking with Structured Moral Framework in Language Models for Moral Reasoning
+
+Overleaf link:
+[Overleaf](https://www.overleaf.com/read/xppksssvdvzc#0a402e)
