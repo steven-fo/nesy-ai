@@ -25,6 +25,10 @@
   Diskusi: Diskusi hasil eksperimen. Diskusi dataset dan prompt yang dibuat. <br>
   Plan: Mengecek hasil eksperimen yang sudah ada. Mengecek 1 data point untuk LLM. Mengecek efektivitas reminder prompt. Melakukan eksperimen untuk subtask yang berbeda dari deontology (utilitarianism) <br>
 7. Bimbingan 7: 27 Maret 2026 (online) <br>
+  Progress: Update progress eksperimen menggunakan SLM pada subtask utilitarianism. Mengubah prompt untuk fast agar hanya berfokus pada general requirements saja dan membuat prompt moral principle lebih berfokus pada question dan output format. Mengganti model yang digunakan dari Qwen 1.5 menjadi Qwen 3. <br>
+  Diskusi: Diskusi hasil eksperimen utilitarianism. Diskusi pembuatan prompt yang terlalu panjang dan kompleks sehingga membuat model rentan mengalami halusinasi. <br>
+  Plan: Membaca paper structured moral reasoning untuk mencari tahu penerapan LLM pada dataset ETHICS. Mencari dataset lain yang memiliki moral dilemma yang lebih jelas dibandingkan ETHICS. <br>
+8. Bimbingan 8: 03 April 2026 <br>
   Progress: <br>
   Diskusi:  <br>
   Plan:  <br>
