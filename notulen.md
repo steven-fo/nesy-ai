@@ -28,7 +28,11 @@
   Progress: Update progress eksperimen menggunakan SLM pada subtask utilitarianism. Mengubah prompt untuk fast agar hanya berfokus pada general requirements saja dan membuat prompt moral principle lebih berfokus pada question dan output format. Mengganti model yang digunakan dari Qwen 1.5 menjadi Qwen 3. <br>
   Diskusi: Diskusi hasil eksperimen utilitarianism. Diskusi pembuatan prompt yang terlalu panjang dan kompleks sehingga membuat model rentan mengalami halusinasi. <br>
   Plan: Membaca paper structured moral reasoning untuk mencari tahu penerapan LLM pada dataset ETHICS. Mencari dataset lain yang memiliki moral dilemma yang lebih jelas dibandingkan ETHICS. <br>
-8. Bimbingan 8: 03 April 2026 <br>
+8. Bimbingan 8: 09 April 2026 <br>
+  Progress: Mencari dataset moral lainnya. Mendapatkan dataset MoralCoT, MoreBench, ValuePRISM, dan Unimoral<br>
+  Diskusi: Diskusi pemilihan dataset untuk penelitian <br>
+  Plan: Mencoba membuat prompt yang sesuai untuk dataset ValuePRISM <br>
+9. Bimbingan 9: 17 April 2026 <br>
   Progress: <br>
   Diskusi:  <br>
   Plan:  <br>
