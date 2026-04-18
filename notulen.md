@@ -33,6 +33,10 @@
   Diskusi: Diskusi pemilihan dataset untuk penelitian <br>
   Plan: Mencoba membuat prompt yang sesuai untuk dataset ValuePRISM <br>
 9. Bimbingan 9: 17 April 2026 <br>
+  Progress: Pembuatan prompt mengikuti flow yang dibahas minggu lalu. <br>
+  Diskusi: Diskusi pencarian paper dataset yang sudah published dan next plan dan eksperimen <br>
+  Plan: Membaca paper yang sudah published dan kode yang ada di repositori nya <br>
+11. Bimbingan 9: 24 April 2026 <br>
   Progress: <br>
   Diskusi:  <br>
   Plan:  <br>
