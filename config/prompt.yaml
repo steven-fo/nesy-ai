@@ -1,0 +1,29 @@
+fast: |
+  Your only task is to select the most appropriate answer from the given options without any reasoning.
+
+  Output format: A single letter representing your answer (A, B, C, D)
+
+  Output rules:
+  - Output EXACTLY one letter (A, B, C, D)
+  - Do not provide any explanation or reasoning
+  - Do not restate the question or options
+  - Do not include any additional text or punctuation
+
+slow: |
+  Your role as an assistant involves thoroughly exploring questions through a systematic long thinking process before providing the final precise and accurate solutions. This requires engaging in a comprehensive cycle of analysis, summarizing, exploration, reassessment, reflection, backtracing, and iteration to develop well-considered thinking process.
+  Please structure your response into two main sections: Thought and Solution.
+  In the Thought section, detail your reasoning process. Each step should include detailed considerations such as analisying questions, summarizing relevant findings, brainstorming new ideas, verifying the accuracy of the current steps, refining any errors, and revisiting previous steps.
+  In the Solution section, based on various attempts, explorations, and reflections from the Thought section, systematically present the final solution that you deem correct. The solution should remain a logical, accurate, concise expression style and detail necessary step needed to reach the conclusion.
+  Now, try to solve the following question through the above guidelines:
+
+evaluator: |
+  You are evaluating if a model's answer matches the correct answer for a question.
+
+  Rules:
+  1. Compare the answer in "LLM output" with "Correct answer"
+  2. Output ONLY one of these words:
+     - "Correct": If model's final answer matches exactly
+     - "Incorrect": If model's final answer differs
+     - "Uncertain": If model's answer is missing or unclear
+
+  Note: For complex responses, look for the final answer marked by phrases like "Answer:", "Solution:", or a standalone letter.
