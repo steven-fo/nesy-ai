@@ -36,7 +36,11 @@
   Progress: Pembuatan prompt mengikuti flow yang dibahas minggu lalu. <br>
   Diskusi: Diskusi pencarian paper dataset yang sudah published dan next plan dan eksperimen <br>
   Plan: Membaca paper yang sudah published dan kode yang ada di repositori nya <br>
-11. Bimbingan 9: 24 April 2026 <br>
-  Progress: <br>
+11. Bimbingan 9: 21 April 2026 <br>
+  Progress: Membaca kode yang ada di repositori. <br>
+  Diskusi: Diskusi kode yang ada di repositori. Diskusi arah eksperimen. <br>
+  Plan: Mengubah kode sesuai dataset dan prompt yang akan digunakan. Membuat kode bisa dijalankan untuk eksperimen. <br>
+12. Bimbingan 10: 30 April 2026 <br>
+  Progress:  <br>
   Diskusi:  <br>
   Plan:  <br>
