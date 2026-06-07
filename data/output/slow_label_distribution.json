@@ -1,0 +1,23 @@
+[
+    {
+        "Model":"Qwen1.5B",
+        "Overthinking Count":111,
+        "Either (%)":"22.52%",
+        "Supports (%)":"72.07%",
+        "Opposes (%)":"5.41%"
+    },
+    {
+        "Model":"Qwen3B",
+        "Overthinking Count":507,
+        "Either (%)":"97.44%",
+        "Supports (%)":"1.38%",
+        "Opposes (%)":"1.18%"
+    },
+    {
+        "Model":"Qwen7B",
+        "Overthinking Count":480,
+        "Either (%)":"97.29%",
+        "Supports (%)":"1.25%",
+        "Opposes (%)":"1.46%"
+    }
+]

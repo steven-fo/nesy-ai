@@ -1,0 +1,117 @@
+{
+    "evaluations": [
+        {
+            "dataset": "Qwen1.5B",
+            "metrics": {
+                "FastThinking Rule Distribution": {
+                    "Rule 1": 924,
+                    "Rule 4": 73,
+                    "Rule 2": 3
+                },
+                "SlowThinking Rule Distribution": {
+                    "Rule 1": 968,
+                    "Rule 2": 32
+                },
+                "Fast Correct Count": 501,
+                "Slow Correct Count": 474,
+                "Fast Accuracy": "50.10%",
+                "Slow Accuracy": "47.40%",
+                "Capability Knowledge Retrieval (CKR)": "50.10%",
+                "Capability Reasoning Adjustment (CRA)": "-2.70%",
+                "Overthinking Count": 111,
+                "Overthinking Rate": "22.16%",
+                "Correction Count": 84,
+                "Correction Rate": "16.83%",
+                "Slow Label Distribution (Overthinking)": {
+                    "Supports": 80,
+                    "Either": 25,
+                    "Opposes": 6
+                }
+            }
+        },
+        {
+            "dataset": "Qwen3B",
+            "metrics": {
+                "FastThinking Rule Distribution": {
+                    "Rule 1": 993,
+                    "Rule 4": 7
+                },
+                "SlowThinking Rule Distribution": {
+                    "Rule 1": 992,
+                    "Rule 2": 8
+                },
+                "Fast Correct Count": 573,
+                "Slow Correct Count": 208,
+                "Fast Accuracy": "57.30%",
+                "Slow Accuracy": "20.80%",
+                "Capability Knowledge Retrieval (CKR)": "57.30%",
+                "Capability Reasoning Adjustment (CRA)": "-36.50%",
+                "Overthinking Count": 507,
+                "Overthinking Rate": "88.48%",
+                "Correction Count": 142,
+                "Correction Rate": "33.26%",
+                "Slow Label Distribution (Overthinking)": {
+                    "Either": 494,
+                    "Supports": 7,
+                    "Opposes": 6
+                }
+            }
+        },
+        {
+            "dataset": "Qwen7B",
+            "metrics": {
+                "FastThinking Rule Distribution": {
+                    "Rule 1": 993,
+                    "Rule 4": 7
+                },
+                "SlowThinking Rule Distribution": {
+                    "Rule 1": 829,
+                    "Rule 2": 166,
+                    "Rule 3": 5
+                },
+                "Fast Correct Count": 646,
+                "Slow Correct Count": 271,
+                "Fast Accuracy": "64.60%",
+                "Slow Accuracy": "27.10%",
+                "Capability Knowledge Retrieval (CKR)": "64.60%",
+                "Capability Reasoning Adjustment (CRA)": "-37.50%",
+                "Overthinking Count": 480,
+                "Overthinking Rate": "74.30%",
+                "Correction Count": 105,
+                "Correction Rate": "29.66%",
+                "Slow Label Distribution (Overthinking)": {
+                    "Either": 467,
+                    "Opposes": 7,
+                    "Supports": 6
+                }
+            }
+        },
+        {
+            "dataset": "Qwen7B Anchor",
+            "metrics": {
+                "FastThinking Rule Distribution": {
+                    "Rule 1": 1000
+                },
+                "SlowThinking Rule Distribution": {
+                    "Rule 1": 956,
+                    "Rule 2": 42,
+                    "Rule 3": 2
+                },
+                "Fast Correct Count": 238,
+                "Slow Correct Count": 185,
+                "Fast Accuracy": "23.80%",
+                "Slow Accuracy": "18.50%",
+                "Capability Knowledge Retrieval (CKR)": "23.80%",
+                "Capability Reasoning Adjustment (CRA)": "-5.30%",
+                "Overthinking Count": 162,
+                "Overthinking Rate": "68.07%",
+                "Correction Count": 109,
+                "Correction Rate": "14.30%",
+                "Slow Label Distribution (Overthinking)": {
+                    "Either": 151,
+                    "Supports": 11
+                }
+            }
+        }
+    ]
+}
