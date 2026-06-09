@@ -62,7 +62,7 @@ def plot_overthinking_and_correction(df: pd.DataFrame, outdir: str) -> None:
 	plt.close()
 
 
-def plot_accuracies_and_cra(df: pd.DataFrame, outdir: str) -> None:
+def plot_anchor(df: pd.DataFrame, outdir: str) -> None:
 	chart_df = df[df["Dataset"].isin(["Qwen7B", "Qwen7B Anchor"])].copy()
 	if chart_df.empty:
 		return
@@ -70,26 +70,30 @@ def plot_accuracies_and_cra(df: pd.DataFrame, outdir: str) -> None:
 	for col in ["Fast Accuracy", "Slow Accuracy", "Capability Reasoning Adjustment (CRA)"]:
 		chart_df[col + " F"] = chart_df[col].apply(pct_str_to_float)
 
-	chart_df = chart_df.rename(columns={
-		"Fast Accuracy F": "Knowledge",
-		"Slow Accuracy F": "Knowledge + Reasoning",
-		"Capability Reasoning Adjustment (CRA) F": "Reasoning Gain",
-	})
+	chart_df = chart_df.rename(columns={"Fast Accuracy F": "Afast"})
+	chart_df = chart_df.rename(columns={"Slow Accuracy F": "Aslow"})
 
 	plot_df = chart_df.melt(
 		id_vars="Dataset",
-		value_vars=["Knowledge", "Knowledge + Reasoning", "Reasoning Gain"],
-		var_name="Metrik",
-		value_name="Nilai Akurasi",
+		value_vars=["Afast", "Aslow"],
+		var_name="Metric",
+		value_name="Value",
 	)
-	plot_df = plot_df.rename(columns={"Dataset": "Model"})
+	metric_order = ["Afast", "Aslow"]
+	plot_df["Metric"] = pd.Categorical(plot_df["Metric"], categories=metric_order, ordered=True)
 
-	plt.figure(figsize=(8, 6))
-	sns.barplot(x="Model", y="Nilai Akurasi", hue="Metrik", data=plot_df)
-	plt.gca().yaxis.set_major_formatter(plt.FuncFormatter(lambda y, _: f"{y:.0%}"))
+	plt.figure(figsize=(12, 7))
+	sns.barplot(x="Dataset", y="Value", hue="Metric", data=plot_df, palette="coolwarm")
+	plt.xlabel("Model", fontsize=14)
+	plt.ylabel("Accuracy (%)", fontsize=14)
+	plt.gca().yaxis.set_major_formatter(plt.FuncFormatter(lambda y, _: "{:.0%}".format(y)))
+	plt.grid(axis="y", linestyle="--", alpha=0.7)
+	plt.xticks(rotation=0, ha="center", fontsize=12, fontstyle="normal")
+	plt.yticks(fontsize=12)
+	plt.legend(title="Metric", fontsize=12, title_fontsize=14)
 	plt.tight_layout()
 	os.makedirs(outdir, exist_ok=True)
-	plt.savefig(os.path.join(outdir, "chart_accuracies_cra.png"))
+	plt.savefig(os.path.join(outdir, "chart_anchor.png"))
 	plt.close()
 
 
@@ -148,7 +152,7 @@ def main(input_path: str = "data/output/combined_evaluation_metrics.json", outdi
 	df = load_combined_metrics(input_path)
 
 	plot_overthinking_and_correction(df, outdir)
-	plot_accuracies_and_cra(df, outdir)
+	plot_anchor(df, outdir)
 	plot_capability_improvements(df, outdir)
 
 
